@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:potion",Count:1b,tag:{display:{Name:"{\"text\":\"§f完全透明化のポーション\"}"},CustomPotionEffects:[{Id:14b,Amplifier:0b,Duration:2000,ShowParticles:0b}],CustomPotionColor:8356754}}}

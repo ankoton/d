@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:command_block",Count:1b,tag:{BlockEntityTag:{auto:1b,Command:"setblock ~ ~ ~ air destroy",id:"minecraft:command_block"},display:{Name:"{\"text\":\"§fair\"}"},Enchantments:[{id:0}]}}}

@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:potion",Count:1b,tag:{display:{Name:"{\"text\":\"§b聖水\"}",Lore:["{\"text\":\"§5飲むと§4死の宣告§5から回復する\"}"]},HideFlags:32,CustomPotionEffects:[{Id:14b,Amplifier:7b,Duration:1,ShowParticles:0b}],CustomPotionColor:4504575}}}

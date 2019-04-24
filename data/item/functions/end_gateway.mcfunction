@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:command_block",Count:1b,tag:{BlockEntityTag:{auto:1b,Command:"setblock ~ ~ ~ minecraft:end_gateway",id:"minecraft:command_block"},display:{Name:"{\"text\":\"§fエンドゲートウェイ\"}"},Enchantments:[{id:0}]}}}

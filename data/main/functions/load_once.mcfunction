@@ -8,6 +8,8 @@ scoreboard objectives add damage_dealt minecraft.custom:minecraft.damage_dealt {
 
 scoreboard objectives add q_carrot_stick minecraft.dropped:minecraft.carrot_on_a_stick {"text":"人参棒捨てた"}
 
+scoreboard objectives add mine_dirt minecraft.mined:minecraft.dirt {"text":"土を掘った"}
+
 scoreboard objectives add rod_skill dummy {"text":"ロッドスキル"}
 scoreboard objectives add rod_skill_mode dummy {"text":"ロッドスキル選択フラグ"}
 scoreboard objectives add rod_skill_A dummy {"text":"ロッドスキルA"}
@@ -22,10 +24,15 @@ scoreboard objectives add health_healing dummy {"text":"カスタムHP回復"}
 scoreboard objectives add global dummy {"text":"グローバル変数"}
 scoreboard objectives add const dummy {"text":"定数"}
 
+scoreboard objectives add loop_i dummy {"text":"ループ用変数 i"}
+scoreboard objectives add loop_x dummy {"text":"ループ用変数 x"}
+scoreboard objectives add loop_y dummy {"text":"ループ用変数 y"}
+scoreboard objectives add loop_z dummy {"text":"ループ用変数 z"}
+
 
 
 # 定数初期化
-scoreboard players set $-1 const -1
+#scoreboard players set $-1 const -1
 scoreboard players set $1 const 1
 scoreboard players set $2 const 2
 scoreboard players set $3 const 3

@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:command_block",Count:1b,tag:{BlockEntityTag:{auto:1b,Command:"setblock ~ ~ ~ minecraft:moving_piston",id:"minecraft:command_block"},display:{Name:"{\"text\":\"§cmoving_piston\"}"},Enchantments:[{id:0}]}}}

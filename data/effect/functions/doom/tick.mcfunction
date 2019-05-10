@@ -1,9 +1,12 @@
 # repeating
+# 前提: execute as @a[tag=doom]
 
 ################################
 # 死の宣告 進行
 ################################
 
+# doomスコアを持たない => 付与された
+execute unless entity @s[scores={doom=0..}] run function effect:doom/give
 
 # display
 execute if entity @s[scores={doom=0}] run tellraw @s ["",{"score":{"name":"@s","objective":"doom_d"},"color":"dark_red"}]

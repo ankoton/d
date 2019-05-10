@@ -22,12 +22,15 @@ execute as @a[scores={death=1..,age=1..}] run function entity:respawn
 # 移動補正
 ################################
 
+# 踏ん張りスキルrestore
+execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/restore
+
 ################################
 # ブロック判定？
 ################################
 
 # 奈落で生存することは許されない
-execute as @a at @s if entity @s[y=-250,dy=50] run kill @s
+execute as @a[y=-250,dy=50] run kill @s
 
 # めり込み対策
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rotated as @s anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #system:immotal_object run function entity:suffocation
@@ -52,16 +55,19 @@ function system:reward_egg
 # バフ・デバフ・状態異常修正、処理、進行
 ################################
 
+# 透明化→特殊効果tagに変換
+function effect:convert_into_custom_effect
 
-# 死の宣告check
-function effect:doom/check
+
+# 死の宣告解除
+execute as @a[tag=doom_escape] run function effect:doom/escape
+
+# 死の宣告処理
+execute as @a[tag=doom] run function effect:doom/tick
+
 
 # 透明化維持
 function entity:invisible
-
-
-# 死の宣告処理
-execute as @a[scores={doom=0..}] run function effect:doom/tick
 
 ################################
 # スポーンしたエンティティの処理
@@ -80,6 +86,7 @@ execute as @a[scores={doom=0..}] run function effect:doom/tick
 # エンティティの行動処理
 ################################
 
+execute as @a run function entity:player/sneaking
 
 function skill:check
 

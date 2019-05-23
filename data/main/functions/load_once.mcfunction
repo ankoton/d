@@ -46,10 +46,10 @@ scoreboard objectives add tips dummy {"text":"Tips"}
 
 
 # 作業用変数
-scoreboard objectives add loop_i dummy {"text":"ループ用変数 i"}
-scoreboard objectives add loop_x dummy {"text":"ループ用変数 x"}
-scoreboard objectives add loop_y dummy {"text":"ループ用変数 y"}
-scoreboard objectives add loop_z dummy {"text":"ループ用変数 z"}
+#scoreboard objectives add loop_i dummy {"text":"ループ用変数 i"}
+#scoreboard objectives add loop_x dummy {"text":"ループ用変数 x"}
+#scoreboard objectives add loop_y dummy {"text":"ループ用変数 y"}
+#scoreboard objectives add loop_z dummy {"text":"ループ用変数 z"}
 
 
 # 定数初期化
@@ -71,6 +71,7 @@ scoreboard players set $MWCMultiplier const 31743
 scoreboard players set $MWCBase const 65536
 scoreboard players set $int_max const 2147483647
 scoreboard players set $int_min const -2147483648
+scoreboard players set $event_num const 2
 
 
 # グローバル変数初期化

@@ -76,7 +76,7 @@ scoreboard players set $int_min const -2147483648
 # グローバル変数初期化
 
 # 乱数初期化
-function lib:random/init
+function lib:random/initialize
 
-scoreboard players set $event_timer global 72000
-
+# イベント初期化
+schedule function event:start 72000t

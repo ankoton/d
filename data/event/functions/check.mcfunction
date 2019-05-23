@@ -1,5 +1,7 @@
+# 前提: scheduleコマンドによって実行される
 
-execute if score $event_timer global matches 0 run function event:start
-execute if score $event_lag global matches 0 run function event:finish
-scoreboard players remove $event_timer global 1
-execute if score $event_lag global matches 0.. run scoreboard players remove $event_lag global 1
+# イベント持ちに対してイベントを発生させる
+execute as @a[scores={event_id=0..}] at @s rotated as @s run function event:happen
+
+# 毎tick実行
+schedule function event:check 1t

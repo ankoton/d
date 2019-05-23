@@ -42,7 +42,7 @@ execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rot
 ################################
 # スポーン？
 ################################
-#function event:check
+
 
 ################################
 # エンティティ初期化

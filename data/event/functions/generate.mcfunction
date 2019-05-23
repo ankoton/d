@@ -1,3 +1,5 @@
+# 前提: execute as <player>
+
 # 演出
 me 「嫌な予感がする……！」
 

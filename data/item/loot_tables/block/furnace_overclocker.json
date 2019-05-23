@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:repeating_command_block",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "かまど高速化くん", "color": "light_purple","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "かまどの", "color": "dark_purple","italic": "false"},{"text": "上", "color": "light_purple","italic": "false"},{"text": "に設置すると、", "color": "dark_purple","italic": "false"}],
+                                [{"text": "かまどを", "color": "dark_purple","italic": "false"},{"text": "高速化", "color": "light_purple","italic": "false"},{"text": "します。", "color": "dark_purple","italic": "false"}],
+                                {"text": "/data merge block ~ ~-1 ~ {CookTime:0s,CookTimeTotal:1s}", "color": "aqua","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"data merge block ~ ~-1 ~ {CookTime:0s,CookTimeTotal:1s}\",id:\"minecraft:repeating_command_block\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

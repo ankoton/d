@@ -1,0 +1,113 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:player_head",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"selector": "@s", "italic": "false"},
+                                {"text": "の魂", "italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "",
+                                {"text": "これはあなたが強者である証。", "color": "dark_purple", "italic":"false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:fill_player_head",
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:8},{id:\"minecraft:fire_protection\",lvl:8},{id:\"minecraft:feather_falling\",lvl:4},{id:\"minecraft:blast_protection\",lvl:8},{id:\"minecraft:projectile_protection\",lvl:8},{id:\"minecraft:respiration\",lvl:3},{id:\"minecraft:aqua_affinity\",lvl:1},{id:\"minecraft:depth_strider\",lvl:3}]}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.knockbackResistance",
+                                    "name": "generic.knockbackResistance",
+                                    "amount": 1,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.movementSpeed",
+                                    "name": "generic.movementSpeed",
+                                    "amount": 0.03,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.attackDamage",
+                                    "name": "generic.attackDamage",
+                                    "amount": 999,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.armor",
+                                    "name": "generic.armor",
+                                    "amount": 30,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.armorToughness",
+                                    "name": "generic.armorToughness",
+                                    "amount": 20,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.attackSpeed",
+                                    "name": "generic.attackSpeed",
+                                    "amount": 1024,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "head"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.followRange",
+                                    "name": "generic.followRange",
+                                    "amount": -1,
+                                    "operation": "multiply_base",
+                                    "slot": [
+                                        "head"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

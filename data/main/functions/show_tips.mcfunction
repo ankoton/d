@@ -7,7 +7,7 @@
 
 
 # calclate index of tips
-function system:random/update
+function lib:random/update
 scoreboard players operation @s tips = $random global
 scoreboard players operation @s tips %= $3 const
 

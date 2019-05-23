@@ -1,5 +1,8 @@
 # 初回限定！！！
 
+# initialize system entity
+function entity:system/initialize
+
 # 定数
 scoreboard objectives add const dummy {"text":"定数"}
 
@@ -23,18 +26,23 @@ scoreboard objectives add q_carrot_stick minecraft.dropped:minecraft.carrot_on_a
 
 scoreboard objectives add mine_dirt minecraft.mined:minecraft.dirt {"text":"土を掘った"}
 
+
+# スキル
+scoreboard objectives add change_skill trigger {"text":"スキル変更トリガー"}
+scoreboard objectives add set_rod_skill trigger {"text":"ロッドスキル設定トリガー"}
 scoreboard objectives add rod_skill dummy {"text":"ロッドスキル"}
-scoreboard objectives add rod_skill_mode dummy {"text":"ロッドスキル選択フラグ"}
-scoreboard objectives add rod_skill_A dummy {"text":"ロッドスキルA"}
-scoreboard objectives add rod_skill_B dummy {"text":"ロッドスキルB"}
+
+
+# 状態異常・特殊効果
+scoreboard objectives add doom dummy {"text":"死の宣告"}
+scoreboard objectives add doom_d dummy {"text":"死の宣告カウント"}
+scoreboard objectives add health_healing dummy {"text":"カスタムHP回復"}
+scoreboard objectives add effect_id dummy {"text":"カスタムエフェクトid"}
+
 
 # 変数
 scoreboard objectives add event_id dummy {"text":"嫌な予感イベントid"}
-scoreboard objectives add doom dummy {"text":"死の宣告"}
-scoreboard objectives add doom_d dummy {"text":"死の宣告カウント"}
 scoreboard objectives add tips dummy {"text":"Tips"}
-scoreboard objectives add health_healing dummy {"text":"カスタムHP回復"}
-scoreboard objectives add effect_id dummy {"text":"カスタムエフェクトid"}
 
 
 # 作業用変数
@@ -68,7 +76,7 @@ scoreboard players set $int_min const -2147483648
 # グローバル変数初期化
 
 # 乱数初期化
-function system:random/init
+function lib:random/init
 
 scoreboard players set $event_timer global 72000
 

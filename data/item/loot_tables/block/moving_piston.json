@@ -1,0 +1,40 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:command_block",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "moving_piston", "color": "red","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "moving_piston", "color": "red","italic": "false"},{"text": "を設置します。", "color": "dark_purple","italic": "false"}],
+                                {"text": "/setblock ~ ~ ~ minecraft:moving_piston", "color": "aqua","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"setblock ~ ~ ~ minecraft:moving_piston\",id:\"minecraft:command_block\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:command_block",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "air", "color": "white","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "空気", "color": "white","italic": "false"},{"text": "を設置します。", "color": "dark_purple","italic": "false"}],
+                                {"text": "/setblock ~ ~ ~ air destroy", "color": "aqua","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"setblock ~ ~ ~ air destroy\",id:\"minecraft:command_block\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,1 +1,0 @@
-execute if entity @s[scores={sneak_skill=2001}] run function skill:sneaking/hunbaru

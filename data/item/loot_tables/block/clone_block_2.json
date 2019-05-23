@@ -1,0 +1,42 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:command_block",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "clone_block", "color": "light_purple","italic": "false"},
+                                {"text": " 2", "color": "gold","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "2", "color": "gold","italic": "false"},{"text": "マス奥のブロック", "color": "light_purple","italic": "false"},{"text": "を", "color": "dark_purple","italic": "false"},{"text": "コピー", "color": "light_purple","italic": "false"},{"text": "します。", "color": "dark_purple","italic": "false"}],
+                                [{"text": "※斜めを向いてるとうまく動かないよ！", "color": "dark_purple","italic": "false"}],
+                                {"text": "/execute rotated as @p run clone ^ ^ ^2 ^ ^ ^2 ~ ~ ~", "color": "aqua","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"execute rotated as @a[distance=..10,gamemode=!spectator,sort=nearest,limit=1] run clone ^ ^ ^2 ^ ^ ^2 ~ ~ ~\",id:\"minecraft:command_block\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

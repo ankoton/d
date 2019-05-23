@@ -4,15 +4,9 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "minecraft:diamond_helmet",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:4},{id:\"minecraft:respiration\",lvl:3},{id:\"minecraft:aqua_affinity\",lvl:1},{id:\"minecraft:unbreaking\",lvl:3},{id:\"minecraft:mending\",lvl:1}]}"
-                        }
-                    ]
+                    "type": "loot_table",
+                    "name": "item:vanilla/diamond_helmet",
+                    "weight": 1
                 }
             ]
         },
@@ -20,15 +14,9 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "minecraft:diamond_chestplate",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:4},{id:\"minecraft:unbreaking\",lvl:3},{id:\"minecraft:mending\",lvl:1}]}"
-                        }
-                    ]
+                    "type": "loot_table",
+                    "name": "item:vanilla/diamond_chestplate",
+                    "weight": 1
                 }
             ]
         },
@@ -36,15 +24,9 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "minecraft:diamond_leggings",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:4},{id:\"minecraft:unbreaking\",lvl:3},{id:\"minecraft:mending\",lvl:1}]}"
-                        }
-                    ]
+                    "type": "loot_table",
+                    "name": "item:vanilla/diamond_leggings",
+                    "weight": 1
                 }
             ]
         },
@@ -52,15 +34,9 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "minecraft:diamond_boots",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:\"minecraft:protection\",lvl:4},{id:\"minecraft:feather_falling\",lvl:4},{id:\"minecraft:depth_strider\",lvl:3},{id:\"minecraft:unbreaking\",lvl:3},{id:\"minecraft:mending\",lvl:1}]}"
-                        }
-                    ]
+                    "type": "loot_table",
+                    "name": "item:vanilla/diamond_boots",
+                    "weight": 1
                 }
             ]
         }

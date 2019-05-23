@@ -86,9 +86,19 @@ function entity:invisible
 # エンティティの行動処理
 ################################
 
+# スニーク変数初期化
 execute as @a run function entity:player/sneaking
 
-function skill:check
+
+# スキル変更処理
+execute as @a at @s run function skill:change
+
+# スキル起動処理
+execute as @a at @s rotated as @s run function skill:activate
+
+
+# Adv.フィール用毎tick処理
+execute as @e[tag=adv_fill] at @s run function skill:rod/adv_fill/tick
 
 
 ################################
@@ -123,5 +133,6 @@ function entity:garbage
 ################################
 
 ################################
-# 
+# system entity 再配置
 ################################
+function entity:system/locate

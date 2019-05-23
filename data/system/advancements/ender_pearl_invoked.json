@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "trigger:ender_pearl_invoked"
+        "function": "system:ender_pearl_invoked"
     }
 }

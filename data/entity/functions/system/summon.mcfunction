@@ -34,5 +34,5 @@ summon area_effect_cloud ~ ~ ~ {Tags:["system","target"],CustomName:"{\"text\":\
 
 
 # common nbt
-execute as @e[tag=system,type=minecraft:armor_stand] run data merge entity @s {Marker:true,Invisible:true,Invulnerable:true,Small:true,NoGravity:true,NoBasePlate:true,ArmorItems:[{id:"minecraft:stone",Count:1b,tag:{}}]}
+execute as @e[tag=system,type=minecraft:armor_stand] run data merge entity @s {Marker:1b,Invisible:1b,Invulnerable:1b,Small:1b,NoGravity:1b,NoBasePlate:1b,ArmorItems:[{id:"minecraft:stone",Count:1b,tag:{}}]}
 execute as @e[tag=system,type=minecraft:area_effect_cloud] run data merge entity @s {Age:-2147483648,WaitTime:2147483647,ReapplicationDelay:2147483647,Duration:2147483647,Particle:"minecraft:block minecraft:air"}

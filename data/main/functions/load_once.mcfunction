@@ -91,6 +91,9 @@ scoreboard players set $MWCBase const 65536
 # 嫌な予感イベントの種類
 scoreboard players set $event_num const 2
 
+# system entity の総数
+execute store result score $system_entity_num const if entity @e[tag=system]
+
 
 ################################
 # initialize global variable

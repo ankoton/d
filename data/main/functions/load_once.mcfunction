@@ -42,14 +42,9 @@ scoreboard objectives add effect_id dummy {"text":"カスタムエフェクトid
 
 # 変数
 scoreboard objectives add event_id dummy {"text":"嫌な予感イベントid"}
-scoreboard objectives add tips dummy {"text":"Tips"}
 
 
 # 作業用変数
-#scoreboard objectives add loop_i dummy {"text":"ループ用変数 i"}
-#scoreboard objectives add loop_x dummy {"text":"ループ用変数 x"}
-#scoreboard objectives add loop_y dummy {"text":"ループ用変数 y"}
-#scoreboard objectives add loop_z dummy {"text":"ループ用変数 z"}
 
 
 # 定数初期化

@@ -1,4 +1,4 @@
 schedule function main:nop 1t
 
-# ignored
+# overwrite
 schedule function main:nop 2t 

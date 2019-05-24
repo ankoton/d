@@ -1,0 +1,66 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:stone",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "[Tips] ", "color": "white", "bold": "true", "italic": "false"},
+                                {"text": "死ぬと死にます！", "color": "white","italic": "false"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:stone",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "[Tips] ", "color": "white", "bold": "true", "italic": "false"},
+                                {"text": "着地前にエンダーパールを投げることで落下ダメージを抑えられます！", "color": "white","italic": "false"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:stone",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "[Tips] ", "color": "white", "bold": "true", "italic": "false"},
+                                {"text": "§l岩盤§rや§lバリア§rに埋まると死んでしまうので注意！", "color": "white","italic": "false"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -16,7 +16,7 @@
 
 
 # プレイヤーリスポーン
-execute as @a[scores={death=1..,age=1..}] run function entity:respawn
+execute as @a[scores={death=1..,age=1..}] run function entity:player/respawn
 
 ################################
 # 移動補正

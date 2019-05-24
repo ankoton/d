@@ -24,3 +24,6 @@ scoreboard players operation $random global %= $MWCBase const
 
 # c /= b
 scoreboard players operation $MWCCarry global /= $MWCBase const
+
+# debug
+#tellraw @a[tag=admin] ["Random updated. --> ",{"score":{"objective":"global","name":"$random"}}]

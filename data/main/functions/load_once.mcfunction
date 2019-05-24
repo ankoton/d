@@ -1,7 +1,15 @@
-# 初回限定！！！
+# 初回限定無料！！！
 
+
+################################
 # initialize system entity
+################################
 function entity:system/initialize
+
+
+################################
+# define scoreboard
+################################
 
 # 定数
 scoreboard objectives add const dummy {"text":"定数"}
@@ -34,10 +42,16 @@ scoreboard objectives add rod_skill dummy {"text":"ロッドスキル"}
 
 
 # 状態異常・特殊効果
+scoreboard objectives add effect_id dummy {"text":"カスタムエフェクトid"}
 scoreboard objectives add doom dummy {"text":"死の宣告"}
 scoreboard objectives add doom_d dummy {"text":"死の宣告カウント"}
 scoreboard objectives add health_healing dummy {"text":"カスタムHP回復"}
-scoreboard objectives add effect_id dummy {"text":"カスタムエフェクトid"}
+
+
+# コマンド式スポナー
+scoreboard objectives add spawn_delay dummy {"text":"次のスポーンまであと[gametick]"}
+scoreboard objectives add min_spawn_delay dummy {"text":"最低スポーン周期"}
+scoreboard objectives add d_spawn_delay dummy {"text":"⊿スポーン周期"}
 
 
 # 変数
@@ -46,8 +60,11 @@ scoreboard objectives add event_id dummy {"text":"嫌な予感イベントid"}
 
 # 作業用変数
 
+################################
+# initialize const value
+################################
 
-# 定数初期化
+# integral constant
 scoreboard players set $-1 const -1
 scoreboard players set $0 const 0
 scoreboard players set $1 const 1
@@ -62,17 +79,30 @@ scoreboard players set $9 const 9
 scoreboard players set $10 const 10
 scoreboard players set $60 const 60
 scoreboard players set $100 const 100
-scoreboard players set $MWCMultiplier const 31743
-scoreboard players set $MWCBase const 65536
+scoreboard players set $200 const 200
+scoreboard players set $600 const 600
 scoreboard players set $int_max const 2147483647
 scoreboard players set $int_min const -2147483648
+
+# 乱数
+scoreboard players set $MWCMultiplier const 31743
+scoreboard players set $MWCBase const 65536
+
+# 嫌な予感イベントの種類
 scoreboard players set $event_num const 2
 
 
-# グローバル変数初期化
+################################
+# initialize global variable
+################################
 
 # 乱数初期化
 function lib:random/initialize
 
-# イベント初期化
+
+################################
+# initialize event
+################################
+
+# イベント開始
 schedule function event:start 72000t

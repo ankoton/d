@@ -1,3 +1,6 @@
+################################
+# #minecraft:tick
+################################
 # repeating (毎tick実行)
 
 ################################
@@ -44,10 +47,18 @@ execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rot
 # スポーン？
 ################################
 
+# コマンドゴリ押し式スポナー動作
+execute as @e[tag=spawner] at @s rotated as @s if entity @a[distance=..16,gamemode=!spectator] run function spawner:tick
+
+
+# スポナーの座標が空気になったら削除
+execute as @e[tag=spawner] at @s if block ~ ~1.25 ~ minecraft:air run kill @s
 
 ################################
 # エンティティ初期化
 ################################
+
+execute as @e[tag=!initialized] at @s rotated as @s run function entity:initialize
 
 # 印玉のパーティクル表示
 execute as @e[tag=reward_egg] at @s run function decorate:reward_egg

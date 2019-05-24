@@ -26,6 +26,11 @@ execute as @a[scores={death=1..,age=1..}] run function entity:player/respawn
 execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/restore
 
 ################################
+# 座標判定？
+################################
+
+
+################################
 # ブロック判定？
 ################################
 
@@ -34,10 +39,6 @@ execute as @a[y=-250,dy=50] run kill @s
 
 # めり込み対策
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rotated as @s anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #system:immotal_object run function entity:suffocation
-
-################################
-# 座標判定？
-################################
 
 ################################
 # スポーン？
@@ -49,14 +50,14 @@ execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rot
 ################################
 
 # 印玉のパーティクル表示
-function system:reward_egg
+execute as @e[tag=reward_egg] at @s run function decorate:reward_egg
 
 ################################
 # バフ・デバフ・状態異常修正、処理、進行
 ################################
 
 # 透明化→特殊効果tagに変換
-function effect:convert_into_custom_effect
+execute as @a run function effect:convert_into_custom_effect
 
 
 # 死の宣告解除

@@ -21,6 +21,7 @@ scoreboard objectives add global dummy {"text":"グローバル変数"}
 # readonly
 scoreboard objectives add health health {"text":"HP"}
 scoreboard objectives add death deathCount {"text":"デスカウント"}
+scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game {"text":"ログアウトフラグ"}
 scoreboard objectives add use_carrot_stick minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用"}
 scoreboard objectives add use_rod minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用フラグ"}
 scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time {"text":"スニーク時間"}

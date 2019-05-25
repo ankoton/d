@@ -23,7 +23,8 @@ function entity:system/check
 # ？？？？
 ################################
 
-
+# プレイヤーログイン時処理
+execute as @a[scores={leave_game=1..}] run function entity:player/login
 
 # プレイヤーリスポーン
 execute as @a[scores={death=1..,age=1..}] run function entity:player/respawn
@@ -55,7 +56,7 @@ execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rot
 ################################
 
 # コマンドゴリ押し式スポナー動作
-execute as @e[tag=spawner] at @s rotated as @s if entity @a[distance=..16,gamemode=!spectator] run function spawner:tick
+execute as @e[tag=spawner] at @s rotated as @s if entity @a[distance=..16,gamemode=!spectator] run function entity:spawner/tick
 
 
 # スポナーの座標が空気になったら削除

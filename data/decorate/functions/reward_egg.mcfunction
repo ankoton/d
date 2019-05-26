@@ -12,3 +12,7 @@ particle firework ~ ~ ~ 1 1 1 0.5 10 normal
 
 # 1.10.2
 #summon FireworksRocketEntity ~0 ~2 ~0 {Life:1,LifeTime:1,FireworksItem:{id:fireworks,Damage:0s,Count:1b,tag:{Fireworks:{Flight:0b,Explosions:[{Type:0b,Colors:[16776960,16744448],FadeColors:[65344,65535]},{Type:2b,Colors:[16777215],FadeColors:[16777215]}]}}}}
+
+tag @s remove reward_egg
+
+#tellraw @a ["* ",{"selector":"@s"}]

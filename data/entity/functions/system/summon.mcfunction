@@ -1,7 +1,13 @@
-
-# system entity 初期化
+################################
+# summon system entity
+################################
+# 前提: Serverとして実行
 # AECはdistance=0に引っかからないので注意
 # [distance=..0.01]とかならひっかかる
+
+# delete old system entity
+kill @e[tag=system]
+
 
 # text_holder
 summon armor_stand ~ ~ ~ {Tags:["system","text_holder","initialized"],CustomName:"{\"text\":\"text_holder\"}"}

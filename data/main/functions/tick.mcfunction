@@ -20,7 +20,7 @@ function entity:system/check
 ################################
 
 ################################
-# ？？？？
+# player respawn
 ################################
 
 # プレイヤーログイン時処理
@@ -37,43 +37,57 @@ execute as @a[scores={death=1..,age=1..}] run function entity:player/respawn
 execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/restore
 
 ################################
-# 座標判定？
-################################
-
-
-################################
-# ブロック判定？
+# 絶対座標判定
 ################################
 
 # 奈落で生存することは許されない
 execute as @a[y=-250,dy=50] run kill @s
 
+################################
+# ブロック判定？
+################################
+
+
 # めり込み対策
-execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rotated as @s anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #system:immotal_object run function entity:suffocation
+execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rotated as @s anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #system:immotal_object run function entity:player/suffocation
+
+
+################################
+# プレイヤーの入力処理
+################################
+
+# ブロック設置・破壊検知
+
+# スニーク検知
+execute as @a run function entity:player/sneaking
 
 ################################
 # スポーン？
 ################################
 
-# コマンドゴリ押し式スポナー動作
-execute as @e[tag=spawner] at @s rotated as @s if entity @a[distance=..16,gamemode=!spectator] run function entity:spawner/tick
+# ブロックに憑依したコマンドゴリ押し式スポナー 動作
+execute as @e[tag=spawner_possess_block] at @s rotated as @s if entity @a[distance=..32,gamemode=!spectator] run function entity:spawner/possess_block/tick
 
-
-# スポナーの座標が空気になったら削除
-execute as @e[tag=spawner] at @s if block ~ ~1.25 ~ minecraft:air run kill @s
 
 ################################
-# エンティティ初期化
+# initialize entity
 ################################
 
 execute as @e[tag=!initialized] at @s rotated as @s run function entity:initialize
 
-# 印玉のパーティクル表示
-execute as @e[tag=reward_egg] at @s run function decorate:reward_egg
+
 
 ################################
-# バフ・デバフ・状態異常修正、処理、進行
+# entity tick
 ################################
+
+execute as @e at @s rotated as @e run function entity:tick
+
+
+################################
+# effect tick
+################################
+# バフ・デバフ・状態異常修正、処理、進行
 
 # 透明化→特殊効果tagに変換
 execute as @a run function effect:convert_into_custom_effect
@@ -85,29 +99,14 @@ execute as @a[tag=doom_escape] run function effect:doom/escape
 # 死の宣告処理
 execute as @a[tag=doom] run function effect:doom/tick
 
-
-# 透明化維持
-function entity:invisible
-
-################################
-# スポーンしたエンティティの処理
-################################
-
-
-
-
-################################
-# ブロック設置・破壊検知
-################################
-
+# effect最終調整
+function effect:control
 
 
 ################################
 # エンティティの行動処理
 ################################
 
-# スニーク変数初期化
-execute as @a run function entity:player/sneaking
 
 
 # スキル変更処理
@@ -141,18 +140,17 @@ execute as @a[scores={health_healing=0..}] run function effect:health_healing
 ################################
 
 
-################################
-# エンティティ削除
-################################
-
-function entity:garbage
-
 
 ################################
-# パーティクル表示？
+# 不要エンティティ削除
 ################################
+
+function entity:garbage_collection
+
 
 ################################
 # system entity 再配置
 ################################
+
 function entity:system/locate
+

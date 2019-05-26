@@ -1,7 +1,6 @@
-# 前提: execute as @e[tag=spawner] at @s rotated as @s if entity @a[distance=..16,gamemode=!spectator]
+# 前提: execute as @e[tag=spawner] at @s positioned <スポナーの中心> if entity @a[distance=..32,gamemode=!spectator]
 
-
-particle minecraft:flame ~ ~1.7 ~ 0.3 0.3 0.3 0 1 normal
+particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0 1 normal
 
 execute if entity @s[scores={spawn_delay=1..}] run scoreboard players remove @s spawn_delay 1
 

@@ -4,7 +4,8 @@
 ################################
 # initialize system entity
 ################################
-function entity:system/initialize
+
+function entity:system/summon
 
 
 ################################

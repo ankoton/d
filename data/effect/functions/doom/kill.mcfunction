@@ -7,4 +7,3 @@ gamerule showDeathMessages true
 # initialize
 scoreboard players reset @s doom_d
 scoreboard players reset @s doom
-tag @s remove doom

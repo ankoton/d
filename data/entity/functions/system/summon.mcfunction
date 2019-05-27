@@ -13,10 +13,10 @@ kill @e[tag=system]
 summon armor_stand ~ ~ ~ {Tags:["system","text_holder","initialized"],CustomName:"{\"text\":\"text_holder\"}"}
 
 # direction
-summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_east","direction_x","direction_xz","direction_xyz","initialized"],Rotation:[-90.0f,0.0f],CustomName:"{\"text\":\"direction_east\"}"}
-summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_west","direction_x","direction_xz","direction_xyz","initialized"],Rotation:[90.0f,0.0f],CustomName:"{\"text\":\"direction_west\"}"}
 summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_south","direction_z","direction_xz","direction_xyz","initialized"],Rotation:[0.0f,0.0f],CustomName:"{\"text\":\"direction_south\"}"}
+summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_east","direction_x","direction_xz","direction_xyz","initialized"],Rotation:[-90.0f,0.0f],CustomName:"{\"text\":\"direction_east\"}"}
 summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_north","direction_z","direction_xz","direction_xyz","initialized"],Rotation:[-180.0f,0.0f],CustomName:"{\"text\":\"direction_north\"}"}
+summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_west","direction_x","direction_xz","direction_xyz","initialized"],Rotation:[90.0f,0.0f],CustomName:"{\"text\":\"direction_west\"}"}
 summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_up","direction_y","direction_xyz","initialized"],Rotation:[0.0f,-90.0f],CustomName:"{\"text\":\"direction_up\"}"}
 summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_down","direction_y","direction_xyz","initialized"],Rotation:[0.0f,90.0f],CustomName:"{\"text\":\"direction_down\"}"}
 

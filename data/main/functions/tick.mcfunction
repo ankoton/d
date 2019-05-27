@@ -11,6 +11,12 @@ function entity:system/check
 
 
 ################################
+# load settings
+################################
+
+
+
+################################
 # 非依存処理
 ################################
 
@@ -68,6 +74,9 @@ execute as @a run function entity:player/sneaking
 # ブロックに憑依したコマンドゴリ押し式スポナー 動作
 execute as @e[tag=spawner_possess_block] at @s rotated as @s if entity @a[distance=..32,gamemode=!spectator] run function entity:spawner/possess_block/tick
 
+# エンティティに憑依したコマンドゴリ押し式スポナー 動作
+execute as @e[tag=spawner_possess_entity] at @s rotated as @s if entity @a[distance=..32,gamemode=!spectator] run function entity:spawner/possess_entity/tick
+
 
 ################################
 # initialize entity
@@ -89,15 +98,11 @@ execute as @e at @s rotated as @e run function entity:tick
 ################################
 # バフ・デバフ・状態異常修正、処理、進行
 
-# 透明化→特殊効果tagに変換
-execute as @a run function effect:convert_into_custom_effect
+# 透明化 -> 特殊効果 変換
+execute as @a run function effect:convert
 
-
-# 死の宣告解除
-execute as @a[tag=doom_escape] run function effect:doom/escape
-
-# 死の宣告処理
-execute as @a[tag=doom] run function effect:doom/tick
+# カスタムエフェクト進行処理
+execute as @a run function effect:tick
 
 # effect最終調整
 function effect:control

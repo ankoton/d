@@ -13,5 +13,3 @@ execute store result score @s min_spawn_delay run data get entity @s ArmorItems[
 execute store result score @s d_spawn_delay run data get entity @s ArmorItems[3].tag.BlockEntityTag.MaxSpawnDelay
 scoreboard players operation @s d_spawn_delay -= @s min_spawn_delay
 
-
-tag @s add initialized

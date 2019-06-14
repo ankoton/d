@@ -22,5 +22,5 @@ execute if entity @s[tag=spawner_possess_entity] run function entity:spawner/pos
 # 印玉のパーティクル表示
 execute if entity @s[tag=reward_egg] run function entity:reward_egg/initialize
 
-
-#tag @s add initialized
+# add tag
+tag @s add initialized

@@ -18,6 +18,9 @@ scoreboard objectives add const dummy {"text":"定数"}
 # グローバル変数
 scoreboard objectives add global dummy {"text":"グローバル変数"}
 
+# 作業用変数
+scoreboard objectives add tmp dummy {"text":"作業用変数"}
+
 
 # readonly
 scoreboard objectives add health health {"text":"HP"}

@@ -90,7 +90,7 @@ execute as @e[tag=!initialized] at @s rotated as @s run function entity:initiali
 # entity tick
 ################################
 
-execute as @e at @s rotated as @e run function entity:tick
+execute as @e at @s rotated as @s run function entity:tick
 
 
 ################################

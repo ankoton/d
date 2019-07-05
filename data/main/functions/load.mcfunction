@@ -11,4 +11,4 @@ execute unless score $initialized const = $initialized const store success score
 scoreboard players reset $initialized const
 
 # finish
-tell @a[tag=admin] Datapack Loaded.
+tell @a[tag=admin] ** Datapack Loaded. **

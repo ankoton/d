@@ -49,7 +49,6 @@ scoreboard objectives add rod_skill dummy {"text":"ロッドスキル"}
 # 状態異常・特殊効果
 scoreboard objectives add effect_id dummy {"text":"カスタムエフェクトid"}
 scoreboard objectives add doom dummy {"text":"死の宣告"}
-scoreboard objectives add doom_d dummy {"text":"死の宣告カウント"}
 scoreboard objectives add health_healing dummy {"text":"カスタムHP回復"}
 
 

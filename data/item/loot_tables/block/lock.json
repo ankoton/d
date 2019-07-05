@@ -26,13 +26,15 @@
                                 [{"text": "チェスト等", "color": "light_purple","italic": "false"},{"text": "の", "color": "dark_purple","italic": "false"},{"text": "上", "color": "light_purple","italic": "false"},{"text": "に設置すると、", "color": "dark_purple","italic": "false"}],
                                 [{"text": "ロック", "color": "light_purple","italic": "false"},{"text": "します。", "color": "dark_purple","italic": "false"}],
                                 [{"text": "※コマンド以外では解除できなくなります！", "color": "dark_purple","italic": "false"}],
-                                {"text": "/data modify block ~ ~-1 ~ Lock set value \"§r\"", "color": "aqua","italic": "false"}
+                                [{"text": "/execute positioned ~ ~-1 ~", "color": "aqua","italic": "false"}],
+                                [{"text": "  unless data block ~ ~ ~ Lock", "color": "aqua","italic": "false"}],
+                                [{"text": "  run data modify block ~ ~ ~ Lock set value \"§r\"", "color": "aqua","italic": "false"}]
                             ],
                             "entity": "this"
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"/data modify block ~ ~-1 ~ Lock set value \\\"§r\\\"\",id:\"minecraft:command_block\"}}"
+                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"/execute positioned ~ ~-1 ~ unless data block ~ ~ ~ Lock run data modify block ~ ~ ~ Lock set value \\\"§r\\\"\",id:\"minecraft:command_block\"}}"
                         }
                     ]
                 }

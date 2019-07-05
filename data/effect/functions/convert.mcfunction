@@ -1,5 +1,7 @@
-# repeating
-# 前提: execute as <player>
+# 透明化エフェクトをカスタムエフェクトに変換
+
+# require:
+#  execute as <player>
 
 
 # 透明化Lv取得

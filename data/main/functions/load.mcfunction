@@ -2,7 +2,6 @@
 # #minecraft:load
 ################################
 
-# スコアボードがなければload_onceを実行
 scoreboard objectives add const dummy {"text":"定数"}
 execute unless score $initialized const = $initialized const store success score $initialized const run function main:load_once
 
@@ -11,4 +10,4 @@ execute unless score $initialized const = $initialized const store success score
 scoreboard players reset $initialized const
 
 # finish
-tell @a[tag=admin] ** Datapack Loaded. **
+tellraw @a[tag=admin] ["** Datapack Loaded. **"]

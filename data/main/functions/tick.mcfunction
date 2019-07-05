@@ -7,7 +7,7 @@
 ################################
 # system entity 生存check
 ################################
-function entity:system/check
+#function entity:system/check
 
 
 ################################

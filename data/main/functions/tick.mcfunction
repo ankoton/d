@@ -8,6 +8,7 @@
 # system entity 生存check
 ################################
 #function entity:system/check
+execute store result score $system_entity_num global if entity @e[tag=system]
 
 
 ################################
@@ -47,6 +48,7 @@ execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/rest
 ################################
 
 # 奈落で生存することは許されない
+# y=-200..-250 でkill
 execute as @a[y=-250,dy=50] run kill @s
 
 ################################
@@ -72,10 +74,10 @@ execute as @a run function entity:player/sneaking
 ################################
 
 # ブロックに憑依したコマンドゴリ押し式スポナー 動作
-execute as @e[tag=spawner_possess_block] at @s rotated as @s if entity @a[distance=..32,gamemode=!spectator] run function entity:spawner/possess_block/tick
+execute as @e[tag=spawner_possess_block] at @s rotated as @s if entity @a[gamemode=!spectator,distance=..32] run function entity:spawner/possess_block/tick
 
 # エンティティに憑依したコマンドゴリ押し式スポナー 動作
-execute as @e[tag=spawner_possess_entity] at @s rotated as @s if entity @a[distance=..32,gamemode=!spectator] run function entity:spawner/possess_entity/tick
+execute as @e[tag=spawner_possess_entity] at @s rotated as @s if entity @a[gamemode=!spectator,distance=..32] run function entity:spawner/possess_entity/tick
 
 
 ################################

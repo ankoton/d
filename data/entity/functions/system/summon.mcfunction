@@ -23,6 +23,14 @@ execute unless entity 0-0-0-0-2 run summon area_effect_cloud ~ ~ ~ {Tags:["syste
 execute unless entity 0-0-0-0-10 run summon armor_stand ~ ~ ~ {Tags:["system","text_holder","initialized"],Marker:1b,Invisible:1b,Invulnerable:1b,Small:1b,NoGravity:1b,NoBasePlate:1b,ArmorItems:[{id:"minecraft:stone",Count:1b,tag:{}}],UUIDMost:0l,UUIDLeast:16l,CustomName:"{\"text\":\"text_holder\"}"}
 
 
+# coordinate_holder
+execute unless entity 0-0-0-0-cafe run summon area_effect_cloud ~ ~ ~ {Tags:["system","coordinate_holder","initialized"],Age:-2147483648,WaitTime:2147483647,ReapplicationDelay:2147483647,Duration:2147483647,Particle:"minecraft:block minecraft:air",UUIDMost:0l,UUIDLeast:51966l,CustomName:"{\"text\":\"coordinate_holder\"}"}
+
+
+# rotation_holder
+execute unless entity 0-0-0-0-face run summon area_effect_cloud ~ ~ ~ {Tags:["system","rotation_holder","initialized"],Age:-2147483648,WaitTime:2147483647,ReapplicationDelay:2147483647,Duration:2147483647,Particle:"minecraft:block minecraft:air",UUIDMost:0l,UUIDLeast:64206l,CustomName:"{\"text\":\"rotation_holder\"}"}
+
+
 # direction
 execute unless entity @e[tag=direction_south] run summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_south","direction_z","direction_xz","direction_xyz","initialized"],Rotation:[0.0f,0.0f],Age:-2147483648,WaitTime:2147483647,ReapplicationDelay:2147483647,Duration:2147483647,Particle:"minecraft:block minecraft:air",CustomName:"{\"text\":\"direction_south\"}"}
 
@@ -36,9 +44,6 @@ execute unless entity @e[tag=direction_up] run summon area_effect_cloud ~ ~ ~ {T
 
 execute unless entity @e[tag=direction_down] run summon area_effect_cloud ~ ~ ~ {Tags:["system","direction_down","direction_y","direction_xyz","initialized"],Rotation:[0.0f,90.0f],Age:-2147483648,WaitTime:2147483647,ReapplicationDelay:2147483647,Duration:2147483647,Particle:"minecraft:block minecraft:air",CustomName:"{\"text\":\"direction_down\"}"}
 
-
-# coordinate
-execute unless entity 0-0-0-0-20 run summon area_effect_cloud ~ ~ ~ {Tags:["system","coordinate","initialized"],Age:-2147483648,WaitTime:2147483647,ReapplicationDelay:2147483647,Duration:2147483647,Particle:"minecraft:block minecraft:air",UUIDMost:0l,UUIDLeast:32l,CustomName:"{\"text\":\"coordinate\"}"}
 
 
 # chunk_corner

@@ -4,7 +4,7 @@
 loot replace entity @s weapon.mainhand loot text:tips
 
 # store text to CustomName
-data modify entity @s CustomName set from entity @s HandItems[0].tag.display.Name
+data modify entity @s CustomName set from entity @s HandItems[0].tag.tips
 
 # delete item
 data remove entity @s HandItems[0]

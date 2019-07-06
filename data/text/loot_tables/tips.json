@@ -13,12 +13,8 @@
                             "count": 1
                         },
                         {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                "",
-                                {"text": "[Tips] ", "color": "white", "bold": "true", "italic": "false"},
-                                {"text": "死ぬと死にます！", "color": "white","italic": "false"}
-                            ]
+                            "function": "minecraft:set_nbt",
+                            "tag": "{tips:\"死ぬと死にます！\"}"
                         }
                     ]
                 },
@@ -32,12 +28,8 @@
                             "count": 1
                         },
                         {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                "",
-                                {"text": "[Tips] ", "color": "white", "bold": "true", "italic": "false"},
-                                {"text": "着地前にエンダーパールを投げることで落下ダメージを抑えられます！", "color": "white","italic": "false"}
-                            ]
+                            "function": "minecraft:set_nbt",
+                            "tag": "{tips:\"着地前にエンダーパールを投げることで落下ダメージを抑えられます！\"}"
                         }
                     ]
                 },
@@ -51,12 +43,8 @@
                             "count": 1
                         },
                         {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                "",
-                                {"text": "[Tips] ", "color": "white", "bold": "true", "italic": "false"},
-                                {"text": "§l岩盤§rや§lバリア§rに埋まると死んでしまうので注意！", "color": "white","italic": "false"}
-                            ]
+                            "function": "minecraft:set_nbt",
+                            "tag": "{tips:\"§l岩盤§rや§lバリア§rに埋まると死んでしまうので注意！\"}"
                         }
                     ]
                 }

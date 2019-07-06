@@ -3,7 +3,10 @@
 # require:
 #  execute as <player> run function <this>
 
-execute as @e[tag=text_holder,limit=1] run function text:tips/generate
+# get text from loot_table
+loot replace entity 0-0-0-0-10 weapon.mainhand loot text:tips
 
-tellraw @s ["",{"text":"[Tips] ","color":"white","bold":"true","italic":"false"},{"selector":"@e[tag=text_holder,limit=1]"}]
+tellraw @s ["",{"text":"[Tips] ","color":"white","bold":"true","italic":"false"},{"nbt":"HandItems[0].tag.tips","entity":"0-0-0-0-10"}]
 
+# delete item
+data remove entity 0-0-0-0-10 HandItems[0]

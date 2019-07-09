@@ -49,7 +49,7 @@ execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/rest
 
 # 奈落で生存することは許されない
 # y=-200..-250 でkill
-execute as @a[y=-250,dy=50] run kill @s
+execute as @a[y=-200,dy=-50] run kill @s
 
 ################################
 # ブロック判定？

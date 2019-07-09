@@ -1,4 +1,4 @@
-# systemエンティティを初期位置に戻す。
+# return system entity to the original position
 
 # require:
 #  execute as [Server] run function <this>

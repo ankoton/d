@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "doom": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility" : {
+                        "amplifier": 3,
+                        "duration": {
+                            "min": 1
+                        }
+                    }
+                }
+            }
+        },
+        "doom_escape": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility" : {
+                        "amplifier": 7,
+                        "duration": {
+                            "min": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["doom", "doom_escape"]
+    ],
+    "rewards": {
+        "function": "effect:custom_effect/convert"
+    }
+}

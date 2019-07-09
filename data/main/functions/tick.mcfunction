@@ -89,22 +89,19 @@ execute as @e[type=!player,tag=!initialized] at @s rotated as @s run function en
 
 
 ################################
-# entity tick
+# tick entity
 ################################
 
 execute as @e at @s rotated as @s run function entity:tick
 
 
 ################################
-# effect tick
+# tick effect
 ################################
 # バフ・デバフ・状態異常修正、処理、進行
 
-# 透明化 -> 特殊効果 変換
-execute as @a run function effect:convert
-
-# カスタムエフェクト進行処理
-execute as @a run function effect:tick
+# tick custom_effect
+execute as @a run function effect:custom_effect/tick
 
 # effect最終調整
 function effect:control
@@ -148,16 +145,14 @@ execute as @a[scores={health_healing=0..}] run function effect:health_healing
 
 
 
+
 ################################
-# 不要エンティティ削除
+# finalization
 ################################
 
+# garbage collection
 function entity:garbage_collection
 
-
-################################
-# system entity 再配置
-################################
-
-function entity:system/locate
+# return system entity
+function entity:system/return
 

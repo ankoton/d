@@ -1,4 +1,6 @@
+# [[deprecated]]
 # 透明化エフェクトをカスタムエフェクトに変換
+
 
 # require:
 #  execute as <player>

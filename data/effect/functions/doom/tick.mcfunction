@@ -15,5 +15,5 @@ execute if score $doom_remainder doom matches 0 run function effect:doom/tick_60
 # kill
 execute if entity @s[scores={doom=0}] run function effect:doom/kill
 
-# count down
+# decrement
 execute if entity @s[scores={doom=1..}] run scoreboard players remove @s doom 1

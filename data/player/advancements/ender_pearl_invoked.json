@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "inventory_changed": {
+        "ender_pearl_invoked": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {

@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "inventory_changed": {
+        "tick": {
             "trigger": "minecraft:tick"
         }
     },

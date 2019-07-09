@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "inventory_changed": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "player:initialize"
+    }
+}

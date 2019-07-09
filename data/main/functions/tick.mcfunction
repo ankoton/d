@@ -31,10 +31,10 @@ execute store result score $system_entity_num global if entity @e[tag=system]
 ################################
 
 # プレイヤーログイン時処理
-execute as @a[scores={leave_game=1..}] run function entity:player/login
+execute as @a[scores={leave_game=1..}] run function player:login
 
 # プレイヤーリスポーン
-execute as @a[scores={death=1..,age=1..}] run function entity:player/respawn
+execute as @a[scores={death=1..,age=1..}] run function player:respawn
 
 ################################
 # 移動補正
@@ -84,7 +84,7 @@ execute as @e[tag=spawner_possess_entity] at @s rotated as @s if entity @a[gamem
 # initialize entity
 ################################
 
-execute as @e[tag=!initialized] at @s rotated as @s run function entity:initialize
+execute as @e[type=!player,tag=!initialized] at @s rotated as @s run function entity:initialize
 
 
 

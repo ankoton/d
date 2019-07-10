@@ -71,8 +71,6 @@ execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rot
 # detect sneak
 execute as @a run function player:sneak
 
-# detect onground
-execute as @a run function player:onground
 
 ################################
 # スポーン？

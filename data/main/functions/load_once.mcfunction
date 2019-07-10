@@ -43,7 +43,6 @@ scoreboard objectives add mine_dirt minecraft.mined:minecraft.dirt {"text":"土�
 
 # player
 scoreboard objectives add sneak dummy {"text":"スニーク"}
-scoreboard objectives add onground dummy {"text":"OnGround"}
 
 
 # skill

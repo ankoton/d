@@ -1,4 +1,3 @@
-# 前提: execute as <player> at <hunbaru_helper>
 
 tp @s ~ ~ ~
 # 慣性消し

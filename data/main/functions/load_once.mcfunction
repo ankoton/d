@@ -18,6 +18,8 @@ scoreboard objectives add const dummy {"text":"定数"}
 # グローバル変数
 scoreboard objectives add global dummy {"text":"グローバル変数"}
 
+scoreboard objectives add local dummy {"text":"ローカル変数"}
+
 # 作業用変数
 scoreboard objectives add tmp dummy {"text":"作業用変数"}
 
@@ -29,7 +31,7 @@ scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game {"tex
 scoreboard objectives add use_carrot_stick minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用"}
 scoreboard objectives add use_rod minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用フラグ"}
 scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time {"text":"スニーク時間"}
-scoreboard objectives add sneaking dummy {"text":"スニーク"}
+
 
 # 自分で初期化するけど基本readonly
 scoreboard objectives add age minecraft.custom:minecraft.time_since_death {"text":"生きている時間"}
@@ -39,15 +41,19 @@ scoreboard objectives add q_carrot_stick minecraft.dropped:minecraft.carrot_on_a
 
 scoreboard objectives add mine_dirt minecraft.mined:minecraft.dirt {"text":"土を掘った"}
 
+# player
+scoreboard objectives add sneak dummy {"text":"スニーク"}
+scoreboard objectives add onground dummy {"text":"OnGround"}
 
-# スキル
+
+# skill
 scoreboard objectives add change_skill trigger {"text":"スキル変更トリガー"}
 scoreboard objectives add set_rod_skill trigger {"text":"ロッドスキル設定トリガー"}
 scoreboard objectives add rod_skill dummy {"text":"ロッドスキル"}
 
 
 # 状態異常・特殊効果
-scoreboard objectives add effect_id dummy {"text":"カスタムエフェクトid"}
+#scoreboard objectives add effect_id dummy {"text":"カスタムエフェクトid"}
 scoreboard objectives add doom dummy {"text":"死の宣告"}
 scoreboard objectives add health_healing dummy {"text":"カスタムHP回復"}
 

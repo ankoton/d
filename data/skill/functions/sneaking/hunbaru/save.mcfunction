@@ -15,3 +15,5 @@ tag @s add hunbaru1
 #schedule function skill:sneaking/hunbaru/restore 2t
 # debug
 #execute as @e[tag=hunbaru_helper] run tellraw @a ["* debug: save: ",{"nbt":"Age","entity":"@s"}]
+
+#tellraw @s [{"nbt":"OnGround","entity":"@s"}]

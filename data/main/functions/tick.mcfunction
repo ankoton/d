@@ -41,7 +41,9 @@ execute as @a[scores={death=1..,age=1..}] run function player:respawn
 ################################
 
 # 踏ん張りスキルrestore
-execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/restore
+#execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/restore
+execute as @a[tag=hunbaru1] at @e[tag=hunbaru_helper,nbt={Age:0},distance=..128,sort=nearest,limit=1] run function skill:sneaking/hunbaru/restore_1
+execute as @a[tag=hunbaru2] at @e[tag=hunbaru_helper,nbt={Age:1},distance=..128,sort=nearest,limit=1] run function skill:sneaking/hunbaru/restore_2
 
 ################################
 # 絶対座標判定
@@ -66,8 +68,11 @@ execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rot
 
 # ブロック設置・破壊検知
 
-# スニーク検知
-execute as @a run function entity:player/sneaking
+# detect sneak
+execute as @a run function player:sneak
+
+# detect onground
+execute as @a run function player:onground
 
 ################################
 # スポーン？

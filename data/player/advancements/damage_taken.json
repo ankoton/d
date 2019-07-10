@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "skill:sneaking/hunbaru/trigger"
+        "function": "player:damage_taken"
     }
 }

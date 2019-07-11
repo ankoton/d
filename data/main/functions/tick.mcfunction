@@ -63,7 +63,6 @@ execute as @a store result score @s onground run data get entity @s OnGround
 ################################
 
 # 踏ん張りスキルrestore
-#execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/restore
 execute as @a[tag=hunbaru1] at @e[tag=hunbaru_helper,nbt={Age:0},distance=..128,sort=nearest,limit=1] run function skill:hunbaru/restore_1
 execute as @a[tag=hunbaru2] at @e[tag=hunbaru_helper,nbt={Age:1},distance=..128,sort=nearest,limit=1] run function skill:hunbaru/restore_2
 

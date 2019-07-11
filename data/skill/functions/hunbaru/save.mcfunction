@@ -1,5 +1,5 @@
 # helperエンティティ召喚
-summon area_effect_cloud ~ ~ ~ {Age:0,Duration:0,ReapplicationDelay:2147483647,WaitTime:2,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,DurationOnUse:0,Invulnerable:true,Particle:"minecraft:block minecraft:air",Tags:["hunbaru_helper"]}
+summon area_effect_cloud ~ ~ ~ {Tags:["hunbaru_helper","initialized"],Age:0,WaitTime:2,ReapplicationDelay:2147483647,Duration:0,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,DurationOnUse:0,Invulnerable:true,Particle:"minecraft:block minecraft:air",CustomName:"{\"text\":\"hunbaru_helper\"}"}
 
 # 私ふんばってます
 tag @s add hunbaru1

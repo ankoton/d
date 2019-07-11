@@ -4,7 +4,7 @@
 #  execute as @e[tag=adv_fill] at @s run function <this>
 
 # 名前変え
-execute if entity @s[nbt={PortalCooldown:0}] run function skill:rod/adv_fill/tick_20
+execute if entity @s[nbt={PortalCooldown:0}] run function skill:adv_fill/tick_20
 #execute if entity @s[nbt={PortalCooldown:200}] run data modify entity @s CustomName set value "{\"text\":\"10\"}"
 #execute if entity @s[nbt={PortalCooldown:180}] run data modify entity @s CustomName set value "{\"text\":\"9\"}"
 #execute if entity @s[nbt={PortalCooldown:160}] run data modify entity @s CustomName set value "{\"text\":\"8\"}"

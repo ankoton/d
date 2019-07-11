@@ -1,4 +1,6 @@
-# 前提: execute as <player> at @s
+
+# require:
+#  execute as @a run function <this>
 
 
 tellraw @s[scores={rod_skill=10000}] ["",{"text":"未設定","color":"light_purple"},"   ",{"text":"→変更！","underlined":"true","clickEvent":{"action":"run_command","value":"/trigger change_skill set 1"}}]

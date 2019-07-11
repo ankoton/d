@@ -50,7 +50,8 @@ execute as @a if entity @s[scores={sneaking=1..}] unless entity @s[scores={sneak
 execute as @a if entity @s[scores={sneak_time=1..}] store success score @s sneaking run scoreboard players reset @s sneak_time
 
 # detect trigger
-#execute
+execute as @a[scores={change_skill=1..}] run function player:skill/change
+execute as @a[scores={set_skill_id=1..}] run function player:skill/set
 
 
 # get nbt
@@ -63,8 +64,8 @@ execute as @a store result score @s onground run data get entity @s OnGround
 
 # 踏ん張りスキルrestore
 #execute as @e[tag=hunbaru_helper] at @s run function skill:sneaking/hunbaru/restore
-execute as @a[tag=hunbaru1] at @e[tag=hunbaru_helper,nbt={Age:0},distance=..128,sort=nearest,limit=1] run function skill:sneaking/hunbaru/restore_1
-execute as @a[tag=hunbaru2] at @e[tag=hunbaru_helper,nbt={Age:1},distance=..128,sort=nearest,limit=1] run function skill:sneaking/hunbaru/restore_2
+execute as @a[tag=hunbaru1] at @e[tag=hunbaru_helper,nbt={Age:0},distance=..128,sort=nearest,limit=1] run function skill:hunbaru/restore_1
+execute as @a[tag=hunbaru2] at @e[tag=hunbaru_helper,nbt={Age:1},distance=..128,sort=nearest,limit=1] run function skill:hunbaru/restore_2
 
 ################################
 # 絶対座標判定
@@ -126,16 +127,12 @@ function effect:control
 ################################
 
 
-
-# スキル変更処理
-execute as @a at @s run function skill:change
-
-# スキル起動処理
-execute as @a at @s rotated as @s run function skill:activate
+# 人参棒
+execute as @a[scores={use_carrot_stick=1..}] at @s run function player:use_carrot_on_a_stick
 
 
 # Adv.フィール用毎tick処理
-execute as @e[tag=adv_fill] at @s run function skill:rod/adv_fill/tick
+execute as @e[tag=adv_fill] at @s run function skill:adv_fill/tick
 
 
 ################################

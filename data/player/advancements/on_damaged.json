@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "damaged": {
+        "on_damaged": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {
@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "player:damaged"
+        "function": "player:on_damaged"
     }
 }

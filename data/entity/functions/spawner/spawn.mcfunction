@@ -24,20 +24,23 @@ execute rotated as @e[tag=direction_xz,limit=4] rotated as @e[tag=direction_x,so
 
 # スポーン数調整
 function lib:random/update
-scoreboard players operation $tmp global = $random global
-scoreboard players operation $tmp global %= $3 const
-execute if score $tmp global matches 0 run kill @e[tag=processing,sort=random,limit=1]
-execute if score $tmp global matches 1 run kill @e[tag=processing,sort=random,limit=2]
-execute if score $tmp global matches 2 run kill @e[tag=processing,sort=random,limit=3]
+scoreboard players operation $fix_spawn_num local = $random global
+scoreboard players operation $fix_spawn_num local %= $4 const
+execute if score $fix_spawn_num local matches 1 run tag @e[tag=processing,sort=random,limit=1] remove processing
+execute if score $fix_spawn_num local matches 2 run tag @e[tag=processing,sort=random,limit=2] remove processing
+execute if score $fix_spawn_num local matches 3 run tag @e[tag=processing,sort=random,limit=3] remove processing
 
 # 召喚
 execute at @e[tag=processing] run summon zombie ~ ~ ~
+
+# 召喚した座標に表示されるパーティクル
 execute at @e[tag=processing] run particle minecraft:poof ~ ~ ~ 0 1 0 0 8
+
+# 召喚時のたくさん出る炎パーティクル
 particle minecraft:flame ~ ~ ~ 0.5 0.5 0.5 0 32 normal
 
-# 
+# tag消去
 tag @e[tag=processing] remove processing
-
 
 # spawn_delayの再設定
 function lib:random/update

@@ -27,14 +27,35 @@ execute store result score $system_entity_num global if entity @e[tag=system]
 ################################
 
 ################################
-# player respawn
+# get current status of player
 ################################
+# check nbt before /tp
 
-# プレイヤーログイン時処理
+# login
 execute as @a[scores={leave_game=1..}] run function player:login
 
-# プレイヤーリスポーン
+# respawn
 execute as @a[scores={death=1..,age=1..}] run function player:respawn
+
+
+# detect land
+execute as @a store success score @s land if entity @s[scores={onground=0},nbt={OnGround:1b}]
+
+# detect jumping
+execute as @a if entity @s[scores={land=1}] run scoreboard players reset @s jumping
+execute as @a if entity @s[scores={jump=1}] store success score @s jumping run scoreboard players reset @s jump
+
+# detect sneaking
+execute as @a if entity @s[scores={sneaking=1..}] unless entity @s[scores={sneak_time=1..}] run scoreboard players reset @s sneaking
+execute as @a if entity @s[scores={sneak_time=1..}] store success score @s sneaking run scoreboard players reset @s sneak_time
+
+# detect trigger
+#execute
+
+
+# get nbt
+execute as @a store result score @s onground run data get entity @s OnGround
+
 
 ################################
 # 移動補正
@@ -59,17 +80,7 @@ execute as @a[y=-200,dy=-50] run kill @s
 
 
 # めり込み対策
-execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rotated as @s anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #system:immotal_object run function entity:player/suffocation
-
-
-################################
-# プレイヤーの入力処理
-################################
-
-# ブロック設置・破壊検知
-
-# detect sneak
-execute as @a run function player:sneak
+#execute as @a[gamemode=!creative,gamemode=!spectator,scores={age=1..}] at @s rotated as @s anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #system:immotal_object run function entity:player/suffocation
 
 
 ################################
@@ -87,7 +98,7 @@ execute as @e[tag=spawner_possess_entity] at @s rotated as @s if entity @a[gamem
 # initialize entity
 ################################
 
-execute as @e[type=!player,tag=!initialized] at @s rotated as @s run function entity:initialize
+execute as @e[tag=!initialized] at @s rotated as @s run function entity:initialize
 
 
 
@@ -104,7 +115,7 @@ execute as @e at @s rotated as @s run function entity:tick
 # バフ・デバフ・状態異常修正、処理、進行
 
 # tick custom_effect
-execute as @a run function effect:custom_effect/tick
+execute as @a[scores={doom=0..}] run function effect:doom/tick
 
 # effect最終調整
 function effect:control

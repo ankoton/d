@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "damage_taken": {
+        "damaged": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {
@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "player:damage_taken"
+        "function": "player:damaged"
     }
 }

@@ -5,6 +5,8 @@
 execute if entity @s[advancements={effect:custom_effect={doom=true}}] unless entity @s[scores={doom=0..}] run function effect:doom/give
 execute if entity @s[advancements={effect:custom_effect={doom_escape=true}},scores={doom=0..}] run function effect:doom/escape
 
+# debug
+me got custom effect.
 
 # initialize
 effect clear @s minecraft:invisibility

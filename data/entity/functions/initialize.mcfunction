@@ -10,7 +10,7 @@
 #execute if entity @s[type=bat]
 
 # プレイヤー
-#execute if entity @s[type=player] run function entity:player/initialize
+execute if entity @s[type=player] run function player:initialize
 
 
 # ブロックに憑依するカスタムスポナー

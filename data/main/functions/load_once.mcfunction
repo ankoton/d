@@ -30,7 +30,8 @@ scoreboard objectives add death deathCount {"text":"デスカウント"}
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game {"text":"ログアウトフラグ"}
 scoreboard objectives add use_carrot_stick minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用"}
 scoreboard objectives add use_rod minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用フラグ"}
-scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time {"text":"スニーク時間"}
+scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time {"text":"sneak_time"}
+scoreboard objectives add jump minecraft.custom:minecraft.jump {"text":"ジャンプ"}
 
 
 # 自分で初期化するけど基本readonly
@@ -42,8 +43,10 @@ scoreboard objectives add q_carrot_stick minecraft.dropped:minecraft.carrot_on_a
 scoreboard objectives add mine_dirt minecraft.mined:minecraft.dirt {"text":"土を掘った"}
 
 # player
-scoreboard objectives add sneak dummy {"text":"スニーク"}
-
+scoreboard objectives add sneaking dummy {"text":"スニーク"}
+scoreboard objectives add onground dummy {"text":"OnGround"}
+scoreboard objectives add land dummy {"text":"着地"}
+scoreboard objectives add jumping dummy {"text":"ジャンプ中"}
 
 # skill
 scoreboard objectives add change_skill trigger {"text":"スキル変更トリガー"}

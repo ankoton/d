@@ -1,1 +1,0 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:splash_potion",Count:3b,tag:{display:{Name:"{\"text\":\"§dエレベーターポーション\"}",Lore:["{\"text\":\"§9跳躍力上昇 Lv50 (0:10)\"}"]},HideFlags:32,CustomPotionEffects:[{Id:8b,Amplifier:49b,Duration:200}],CustomPotionColor:2293580}}}

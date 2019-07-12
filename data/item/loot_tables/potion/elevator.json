@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "エレベーターポーション", "color": "light_purple", "italic": "false"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "跳躍力上昇 Lv50 (0:10)", "color": "blue", "italic": "false"}]
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:8b,Amplifier:49b,Duration:200}],CustomPotionColor:2293580,HideFlags:32}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "聖水", "color": "aqua", "italic": "false"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "飲むと", "color": "dark_purple", "italic": "false"},{"text": "死の宣告", "color": "dark_red", "italic": "false"},{"text": "から回復する", "color": "dark_purple", "italic": "false"}]
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:14b,Amplifier:7b,Duration:1,ShowParticles:0b}],CustomPotionColor:4504575,HideFlags:32}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

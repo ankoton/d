@@ -1,0 +1,31 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "生命の雫", "color": "aqua", "italic": "false"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:22b,Amplifier:9b,Duration:2000}],CustomPotionColor:2445989}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,1 +1,0 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:command_block",Count:1b,tag:{BlockEntityTag:{auto:1b,Command:"setblock ~ ~ ~ minecraft:nether_portal",id:"minecraft:command_block"},display:{Name:"{\"text\":\"§fネザーポータル\"}"},Enchantments:[{id:0}]}}}

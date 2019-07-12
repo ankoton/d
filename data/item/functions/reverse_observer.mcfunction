@@ -1,1 +1,0 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:command_block",Count:1b,tag:{BlockEntityTag:{auto:1b,Command:"function block:reverse_observer",id:"minecraft:command_block"},display:{Name:"{\"text\":\"§f逆向きのオブザーバー\"}"},Enchantments:[{id:0}]}}}

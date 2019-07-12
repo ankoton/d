@@ -1,1 +1,0 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:potion",Count:1b,tag:{display:{Name:"{\"text\":\"§b生命の雫\"}"},CustomPotionEffects:[{Id:22b,Amplifier:9b,Duration:2000}],CustomPotionColor:2445989}}}

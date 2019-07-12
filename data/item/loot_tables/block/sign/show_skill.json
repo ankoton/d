@@ -28,7 +28,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:\"\"}],BlockEntityTag:{\"Color\":\"black\",\"Text1\":\"{\\\"text\\\":\\\"スキル確認の印板\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"/function player:skill/show\\\"}}\"}}"
+                            "tag": "{Enchantments:[{id:\"\"}],BlockEntityTag:{\"Color\":\"black\",\"Text1\":\"{\\\"text\\\":\\\"スキル確認の印板\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"/function item:click_sign/show_skill\\\"}}\"}}"
                         }
                     ]
                 }

@@ -29,7 +29,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],BlockStateTag:{unstable:\"true\"}}"
+                            "tag": "{Enchantments:[{id:\"\"}],BlockStateTag:{unstable:\"true\"}}"
                         }
                     ]
                 }

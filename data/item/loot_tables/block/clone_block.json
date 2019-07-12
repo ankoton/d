@@ -31,7 +31,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"execute rotated as @a[distance=..10,gamemode=!spectator,sort=nearest,limit=1] run clone ^ ^ ^1 ^ ^ ^1 ~ ~ ~\",id:\"minecraft:command_block\"}}"
+                            "tag": "{Enchantments:[{id:\"\"}],BlockEntityTag:{auto:1b,Command:\"execute rotated as @a[distance=..10,gamemode=!spectator,sort=nearest,limit=1] run clone ^ ^ ^1 ^ ^ ^1 ~ ~ ~\",id:\"minecraft:command_block\"}}"
                         }
                     ]
                 }

@@ -31,7 +31,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"/data remove block ~ ~-1 ~ Lock\",id:\"minecraft:command_block\"}}"
+                            "tag": "{Enchantments:[{id:\"\"}],BlockEntityTag:{auto:1b,Command:\"/data remove block ~ ~-1 ~ Lock\",id:\"minecraft:command_block\"}}"
                         }
                     ]
                 }

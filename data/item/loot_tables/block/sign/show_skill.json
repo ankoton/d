@@ -16,21 +16,19 @@
                             "function": "minecraft:set_name",
                             "name": [
                                 "",
-                                {"text": "スキル閲覧の印板", "color": "light_purple","italic": "false"}
-                            ],
-                            "entity": "this"
+                                {"text": "スキル確認の印板", "color": "light_purple","italic": "false"}
+                            ]
                         },
                         {
                             "function": "minecraft:set_lore",
                             "lore": [
                                 [{"text": "設置してクリックすると", "color": "dark_purple","italic": "false"},{"text": "設定中のスキル一覧", "color": "light_purple","italic": "false"},{"text": "を見ることができます。", "color": "dark_purple","italic": "false"}
                                 ]
-                            ],
-                            "entity": "this"
+                            ]
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{\"Color\":\"black\",\"Text1\":\"{\\\"text\\\":\\\"スキル閲覧の印板\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"/function skill:show\\\"}}\"}}"
+                            "tag": "{Enchantments:[{id:\"\"}],BlockEntityTag:{\"Color\":\"black\",\"Text1\":\"{\\\"text\\\":\\\"スキル確認の印板\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"/function player:skill/show\\\"}}\"}}"
                         }
                     ]
                 }

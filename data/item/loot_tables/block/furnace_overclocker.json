@@ -31,7 +31,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"data merge block ~ ~-1 ~ {CookTime:0s,CookTimeTotal:1s}\",id:\"minecraft:repeating_command_block\"}}"
+                            "tag": "{Enchantments:[{id:\"\"}],BlockEntityTag:{auto:1b,Command:\"data merge block ~ ~-1 ~ {CookTime:0s,CookTimeTotal:1s}\",id:\"minecraft:repeating_command_block\"}}"
                         }
                     ]
                 }

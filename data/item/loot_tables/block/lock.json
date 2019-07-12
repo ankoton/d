@@ -34,7 +34,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"/execute positioned ~ ~-1 ~ unless data block ~ ~ ~ Lock run data modify block ~ ~ ~ Lock set value \\\"§r\\\"\",id:\"minecraft:command_block\"}}"
+                            "tag": "{Enchantments:[{id:\"\"}],BlockEntityTag:{auto:1b,Command:\"/execute positioned ~ ~-1 ~ unless data block ~ ~ ~ Lock run data modify block ~ ~ ~ Lock set value \\\"§r\\\"\",id:\"minecraft:command_block\"}}"
                         }
                     ]
                 }

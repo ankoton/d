@@ -30,7 +30,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],BlockEntityTag:{auto:1b,Command:\"setblock ~ ~ ~ minecraft:nether_portal\",id:\"minecraft:command_block\"}}"
+                            "tag": "{Enchantments:[{id:\"\"}],BlockEntityTag:{auto:1b,Command:\"setblock ~ ~ ~ minecraft:nether_portal\",id:\"minecraft:command_block\"}}"
                         }
                     ]
                 }

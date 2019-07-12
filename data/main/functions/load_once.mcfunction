@@ -24,20 +24,23 @@ scoreboard objectives add tmp dummy {"text":"作業用変数"}
 # readonly?
 scoreboard objectives add health health {"text":"HP"}
 scoreboard objectives add death deathCount {"text":"死亡"}
-scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game {"text":"ログアウトフラグ"}
-scoreboard objectives add use_carrot_stick minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用"}
-#scoreboard objectives add use_rod minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用フラグ"}
-scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time {"text":"sneak_time"}
-scoreboard objectives add jump minecraft.custom:minecraft.jump {"text":"ジャンプ"}
 scoreboard objectives add age minecraft.custom:minecraft.time_since_death {"text":"age"}
+scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game {"text":"ログアウトフラグ"}
+scoreboard objectives add jump minecraft.custom:minecraft.jump {"text":"ジャンプ"}
+scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time {"text":"sneak_time"}
+scoreboard objectives add use_carrot_stick minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用"}
 scoreboard objectives add damage_dealt minecraft.custom:minecraft.damage_dealt {"text":"直接攻撃ダメージ"}
 scoreboard objectives add mine_dirt minecraft.mined:minecraft.dirt {"text":"mine_dirt"}
 
 # player
+scoreboard objectives add jumping dummy {"text":"ジャンプ中"}
 scoreboard objectives add sneaking dummy {"text":"スニーク"}
 scoreboard objectives add onground dummy {"text":"OnGround"}
 scoreboard objectives add land dummy {"text":"着地"}
-scoreboard objectives add jumping dummy {"text":"ジャンプ中"}
+
+# custom status
+scoreboard objectives add lv dummy {"text":"レベル"}
+scoreboard objectives add max_mp dummy {"text":"最大MP"}
 
 # skill
 scoreboard objectives add change_skill trigger {"text":"スキル変更トリガー"}

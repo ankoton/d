@@ -30,7 +30,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:0}],EntityTag:{id:\"minecraft:bat\",CustomNameVisible:0b,DeathTime:19s,DeathLootTable:\"item:egg/content/diamond_armor\",NoAI:1b,Tags:[\"reward_egg\"],ActiveEffects:[{Id:7b,Amplifier:5b,Duration:100,ShowParticles:0b},{Id:14b,Amplifier:0b,Duration:100,ShowParticles:0b}]}}"
+                            "tag": "{Enchantments:[{id:\"\"}],EntityTag:{id:\"minecraft:bat\",CustomNameVisible:0b,DeathTime:19s,DeathLootTable:\"item:egg/content/diamond_armor\",NoAI:1b,Tags:[\"reward_egg\"],ActiveEffects:[{Id:7b,Amplifier:5b,Duration:100,ShowParticles:0b},{Id:14b,Amplifier:0b,Duration:100,ShowParticles:0b}]}}"
                         }
                     ]
                 }

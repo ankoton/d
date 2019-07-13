@@ -28,13 +28,13 @@ scoreboard objectives add age minecraft.custom:minecraft.time_since_death {"text
 scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game {"text":"ログアウトフラグ"}
 scoreboard objectives add jump minecraft.custom:minecraft.jump {"text":"ジャンプ"}
 scoreboard objectives add sneak_time minecraft.custom:minecraft.sneak_time {"text":"sneak_time"}
-scoreboard objectives add use_carrot_stick minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用"}
+scoreboard objectives add sneak_time_impl minecraft.custom:minecraft.sneak_time {"text":"sneak_time_impl"}
+scoreboard objectives add use_carrot_stick minecraft.used:minecraft.carrot_on_a_stick {"text":"人参棒使用フラグ"}
 scoreboard objectives add damage_dealt minecraft.custom:minecraft.damage_dealt {"text":"直接攻撃ダメージ"}
 scoreboard objectives add mine_dirt minecraft.mined:minecraft.dirt {"text":"mine_dirt"}
 
 # player
 scoreboard objectives add jumping dummy {"text":"ジャンプ中"}
-scoreboard objectives add sneaking dummy {"text":"スニーク"}
 scoreboard objectives add onground dummy {"text":"OnGround"}
 scoreboard objectives add land dummy {"text":"着地"}
 
@@ -107,8 +107,11 @@ function lib:random/initialize
 
 
 ################################
-# initialize event
+# initialize schedule
 ################################
+
+# 毎秒処理用
+schedule function main:schedule/second 1s
 
 # イベント開始
 schedule function event:start 72000t

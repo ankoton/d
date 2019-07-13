@@ -1,7 +1,7 @@
 ################################
 # #minecraft:tick
 ################################
-# repeating (毎tick実行)
+# Run every 1 gametick
 
 
 ################################
@@ -39,17 +39,23 @@ execute as @a[scores={death=1..,age=1..}] run function player:respawn
 
 
 # detect land
-execute as @a store success score @s land if entity @s[scores={onground=0},nbt={OnGround:1b}]
+execute as @a store result score @s land if entity @s[scores={onground=0},nbt={OnGround:1b}]
+execute as @a[scores={land=1}] run scoreboard players reset @s jumping
+execute as @a[scores={land=1}] at @s run function player:land
 
-# detect jumping
-execute as @a if entity @s[scores={land=1}] run scoreboard players reset @s jumping
-execute as @a if entity @s[scores={jump=1}] store success score @s jumping run scoreboard players reset @s jump
 
-# detect sneaking
-execute as @a if entity @s[scores={sneaking=1..}] unless entity @s[scores={sneak_time=1..}] run scoreboard players reset @s sneaking
-execute as @a if entity @s[scores={sneak_time=1..}] store success score @s sneaking run scoreboard players reset @s sneak_time
+# detect jump
+execute as @a[scores={jump=1}] at @s run function player:jump
+execute as @a[scores={jump=1}] store success score @s jumping run scoreboard players reset @s jump
 
-# detect trigger
+
+# detect sneak
+execute as @a[scores={sneak_time=1}] at @s run function player:start_sneak
+execute as @a[scores={sneak_time=1..}] unless entity @s[scores={sneak_time_impl=1..}] run scoreboard players reset @s sneak_time
+execute as @a[scores={sneak_time_impl=1..}] run scoreboard players reset @s sneak_time_impl
+
+
+# detect /trigger
 execute as @a[scores={change_skill=1..}] run function player:skill/change
 execute as @a[scores={set_skill_id=1..}] run function player:skill/set
 
@@ -84,6 +90,12 @@ execute as @a[y=-200,dy=-50] run kill @s
 
 
 ################################
+# every 1 second
+################################
+execute if score $second global matches 1 run function main:second
+
+
+################################
 # スポーン？
 ################################
 
@@ -110,18 +122,6 @@ execute as @e at @s rotated as @s run function entity:tick
 
 
 ################################
-# tick effect
-################################
-# バフ・デバフ・状態異常修正、処理、進行
-
-# tick custom_effect
-execute as @a[scores={doom=0..}] run function effect:doom/tick
-
-# effect最終調整
-function effect:control
-
-
-################################
 # エンティティの行動処理
 ################################
 
@@ -132,6 +132,18 @@ execute as @a[scores={use_carrot_stick=1..}] at @s run function player:use_carro
 
 # Adv.フィール用毎tick処理
 execute as @e[tag=adv_fill] at @s run function skill:adv_fill/tick
+
+
+################################
+# tick effect
+################################
+# バフ・デバフ・状態異常修正、処理、進行
+
+# tick custom_effect
+execute as @a[scores={doom=0..}] run function effect:doom/tick
+
+# effect最終調整
+function effect:control
 
 
 ################################

@@ -39,18 +39,27 @@ execute as @a[scores={death=1..,age=1..}] run function player:respawn
 
 
 # detect land
-execute as @a store result score @s land if entity @s[scores={onground=0},nbt={OnGround:1b}]
-execute as @a[scores={land=1}] run scoreboard players reset @s jumping
-execute as @a[scores={land=1}] at @s run function player:land
+#execute as @a store result score @s land if entity @s[scores={onground=0},nbt={OnGround:1b}]
+#execute as @a[scores={land=1}] at @s run function player:land
+
+# detect land_by_jump
+execute as @a[scores={land_by_jump=1}] unless entity @s[scores={jumping=1..}] run scoreboard players reset @s land_by_jump
+execute as @a[scores={jumping=1..,onground=0},nbt={OnGround:1b}] store success score @s land_by_jump run scoreboard players reset @s jumping
+
+#execute as @a store result score @s land_by_jump if entity @s[scores={onground=0,jumping=1},nbt={OnGround:1b}]
+#execute as @a store result score @s land_by_jump if entity @s[scores={land=1,jumping=1}]
+#execute as @a[scores={land_by_jump=1}] at @s run function player:land_by_jump
+#execute as @a[scores={land_by_jump=1}] run scoreboard players reset @s jumping
 
 
 # detect jump
-execute as @a[scores={jump=1}] at @s run function player:jump
-execute as @a[scores={jump=1}] store success score @s jumping run scoreboard players reset @s jump
+execute as @a[scores={jump=1..,jumping=1}] run scoreboard players reset @s jump
+execute as @a[scores={jump=1..}] run scoreboard players set @s jumping 1
+#execute as @a[scores={jump=1}] at @s store success score @s jumping run function player:jump
 
 
 # detect sneak
-execute as @a[scores={sneak_time=1}] at @s run function player:start_sneak
+#execute as @a[scores={sneak_time=1}] at @s run function player:start_sneak
 execute as @a[scores={sneak_time=1..}] unless entity @s[scores={sneak_time_impl=1..}] run scoreboard players reset @s sneak_time
 execute as @a[scores={sneak_time_impl=1..}] run scoreboard players reset @s sneak_time_impl
 
@@ -128,6 +137,7 @@ execute as @e at @s rotated as @s run function entity:tick
 
 # 人参棒
 execute as @a[scores={use_carrot_stick=1..}] at @s run function player:use_carrot_on_a_stick
+execute as @a[] at @s run function skill:hop_step_jump/tick
 
 
 # Adv.フィール用毎tick処理

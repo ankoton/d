@@ -37,6 +37,7 @@ scoreboard objectives add mine_dirt minecraft.mined:minecraft.dirt {"text":"mine
 scoreboard objectives add jumping dummy {"text":"ジャンプ中"}
 scoreboard objectives add onground dummy {"text":"OnGround"}
 scoreboard objectives add land dummy {"text":"着地"}
+scoreboard objectives add land_by_jump dummy {"text":"ジャンプによる着地"}
 
 # custom status
 scoreboard objectives add lv dummy {"text":"レベル"}
@@ -46,6 +47,7 @@ scoreboard objectives add max_mp dummy {"text":"最大MP"}
 scoreboard objectives add change_skill trigger {"text":"スキル変更トリガー"}
 scoreboard objectives add set_skill_id trigger {"text":"セットスキルidトリガー"}
 scoreboard objectives add rod_skill dummy {"text":"ロッドスキル"}
+scoreboard objectives add hop_step_jump dummy {"text":"ホップ・ステップ・ジャンプ"}
 
 
 # 状態異常・特殊効果

@@ -1,0 +1,1 @@
+title @s actionbar [{"translate":"%2$s %2$s %2$s %2$s %2$s %2$s %2$s %2$s %2$s %2$s %1$s","with":[{"text":"STEP!!","color":"aqua","bold":"true","italic":"true"},{"translate":"%1$s%1$s%1$s%1$s%1$s%1$s%1$s%1$s","with":[{"text":"\u0020"}]}]}]

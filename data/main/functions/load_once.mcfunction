@@ -65,6 +65,10 @@ scoreboard objectives add d_spawn_delay dummy {"text":"⊿スポーン周期"}
 scoreboard objectives add event_id dummy {"text":"嫌な予感イベントid"}
 
 
+# death message index
+scoreboard objectives add death_message dummy {"text":"デスメッセージ"}
+
+
 ################################
 # initialize const value
 ################################

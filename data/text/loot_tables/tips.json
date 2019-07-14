@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:stone",
+                    "name": "minecraft:tnt",
                     "weight": 1,
                     "functions": [
                         {
@@ -20,7 +20,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:stone",
+                    "name": "minecraft:tnt",
                     "weight": 1,
                     "functions": [
                         {
@@ -35,7 +35,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:stone",
+                    "name": "minecraft:tnt",
                     "weight": 1,
                     "functions": [
                         {

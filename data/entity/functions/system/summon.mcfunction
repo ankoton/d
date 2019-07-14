@@ -20,7 +20,7 @@ execute unless entity 0-0-0-0-2 run summon area_effect_cloud ~ ~ ~ {Tags:["syste
 
 
 # text_holder
-execute unless entity 0-0-0-0-10 run summon armor_stand ~ ~ ~ {Tags:["system","text_holder","initialized"],Marker:1b,Invisible:1b,Invulnerable:1b,Small:1b,NoGravity:1b,NoBasePlate:1b,ArmorItems:[{id:"minecraft:stone",Count:1b,tag:{}}],UUIDMost:0l,UUIDLeast:16l,CustomName:"{\"text\":\"text_holder\"}"}
+execute unless entity 0-0-0-0-10 run summon armor_stand ~ ~ ~ {Tags:["system","text_holder","initialized"],Marker:1b,Invisible:1b,Invulnerable:1b,Small:1b,NoGravity:1b,NoBasePlate:1b,ArmorItems:[{id:"minecraft:tnt",Count:1b,tag:{}}],UUIDMost:0l,UUIDLeast:16l,CustomName:"{\"text\":\"text_holder\"}"}
 
 
 # coordinate_holder

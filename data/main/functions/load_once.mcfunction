@@ -40,7 +40,7 @@ scoreboard objectives add land dummy {"text":"着地"}
 scoreboard objectives add land_by_jump dummy {"text":"ジャンプによる着地"}
 
 # custom status
-scoreboard objectives add lv dummy {"text":"レベル"}
+scoreboard objectives add level dummy {"text":"レベル"}
 scoreboard objectives add max_mp dummy {"text":"最大MP"}
 
 # skill

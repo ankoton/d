@@ -137,7 +137,12 @@ execute as @e at @s rotated as @s run function entity:tick
 
 # 人参棒
 execute as @a[scores={use_carrot_stick=1..}] at @s run function player:use_carrot_on_a_stick
+
+# ホップ・ステップ・ジャンプ
 execute as @a[] at @s run function skill:hop_step_jump/tick
+
+# 挨拶
+execute as @a[] at @s run function skill:aisatsu/tick
 
 
 # Adv.フィール用毎tick処理

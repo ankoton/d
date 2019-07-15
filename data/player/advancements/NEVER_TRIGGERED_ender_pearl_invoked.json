@@ -1,17 +1,19 @@
 {
     "criteria": {
-        "on_damaged_by_magic": {
+        "ender_pearl_invoked": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {
                     "type": {
-                        "is_magic": "true"
+                        "direct_entity": {
+                            "type": "minecraft:ender_pearl"
+                        }
                     }
                 }
             }
         }
     },
     "rewards": {
-        "function": "player:on_damaged_by_magic"
+        "function": "player:ender_pearl_invoked"
     }
 }

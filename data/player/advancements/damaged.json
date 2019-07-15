@@ -1,0 +1,41 @@
+{
+    "criteria": {
+        "normal": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_fire": "false",
+                        "is_magic": "false"
+                    }
+                }
+            }
+        },
+        "by_fire": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_fire": "true"
+                    }
+                }
+            }
+        },
+        "by_magic": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_magic": "true"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["normal", "by_fire", "by_magic"]
+    ],
+    "rewards": {
+        "function": "player:damaged"
+    }
+}

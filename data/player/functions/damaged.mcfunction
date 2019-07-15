@@ -16,7 +16,7 @@ execute if entity @e[type=ender_pearl,nbt={owner:{}},distance=0,sort=nearest,lim
 
 # キルメッセージ偽装
 # この進捗がトリガーされるより前に、`/gamerule showDeathMessages false` してないとバニラメッセージも表示されるよ。
-execute if entity @s[scores={death_message=1..},nbt={Health:0.0f}] run function player:death_message/show
+execute if entity @s[nbt={Health:0.0f},scores={death_message=1..}] run function player:death_message/show
 execute if entity @s[scores={death_message=1..}] run function player:death_message/reset
 
 advancement revoke @s only player:damaged

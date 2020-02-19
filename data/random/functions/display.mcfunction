@@ -1,0 +1,1 @@
+tellraw @a ["",{"text":"random","bold":true},{"text":" = "},{"score": {"name":"$random", "objective":"global"}}]

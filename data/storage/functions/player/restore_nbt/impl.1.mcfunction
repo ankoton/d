@@ -1,0 +1,1 @@
+data modify storage player:current _ set from storage player:1 _

@@ -1,0 +1,1 @@
+summon minecraft:falling_block ~ ~ ~ {BlockState:{Name:"minecraft:glass"},NoGravity:1b,Glowing:1b,Time:560,DropItem:0b,HurtEntities:0b,PortalCooldown:40,CustomName:'{"text":"Glowing Ghost Block"}'}

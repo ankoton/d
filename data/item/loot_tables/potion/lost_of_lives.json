@@ -1,0 +1,47 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "ロスト・オブ・ライブズ", "color": "gray", "italic": "false"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "元々は治癒の効果をより強力に引き出す", "color": "dark_red", "italic": "false"}],
+                                [{"text": "ための実験で出来た失敗作だったが、", "color": "dark_red", "italic": "false"}],
+                                [{"text": "その異常な治癒力で、生物であるならば", "color": "dark_red", "italic": "false"}],
+                                [{"text": "アイテムすら落とさず消滅させる", "color": "dark_red", "italic": "false"}],
+                                [{"text": "恐ろしい効果を持つ。", "color": "dark_red", "italic": "false"}],
+                                [{"text": "これはプレイヤーも例外ではなく、", "color": "dark_red", "italic": "false"}],
+                                [{"text": "持っている物をロストする。", "color": "dark_red", "italic": "false"}],
+                                [{"text": "尚、クリエイティブモードのような", "color": "dark_red", "italic": "false"}],
+                                [{"text": "「無敵状態」でも容赦なく即死する。", "color": "dark_red", "italic": "false"}],
+                                [{"text": "アンデッドにも少しだけ効果があるが、", "color": "dark_red", "italic": "false"}],
+                                [{"text": "即死には至らないので注意。", "color": "dark_red", "italic": "false"}]
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:6b,Amplifier:29b,Duration:1}],CustomPotionColor:16262179}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

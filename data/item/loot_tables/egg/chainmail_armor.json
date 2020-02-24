@@ -1,0 +1,40 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:bat_spawn_egg",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "圧縮防具の印玉 ", "color": "light_purple","italic": "false"},
+                                {"text": "-チェーン-", "color": "gray","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "チェーン", "color": "gray","italic": "false"},{"text": "防具一式が圧縮された印玉。", "color": "dark_purple","italic": "false"}]
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{id:\"\"}],EntityTag:{id:\"minecraft:bat\",CustomNameVisible:0b,DeathTime:19s,DeathLootTable:\"item:egg/content/chainmail_armor\",NoAI:1b,Tags:[\"reward_egg\"],ActiveEffects:[{Id:7b,Amplifier:5b,Duration:100,ShowParticles:0b},{Id:14b,Amplifier:0b,Duration:100,ShowParticles:0b}]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

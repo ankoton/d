@@ -1,0 +1,1 @@
+data modify storage player:3 _ set from entity @s {}

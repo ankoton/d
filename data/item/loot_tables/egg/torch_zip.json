@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:blaze_spawn_egg",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "松明.zip ", "color": "gold","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "松明64個", "color": "gold","italic": "false"},{"text": "が圧縮された印玉。", "color": "dark_purple","italic": "false"}]
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Enchantments:[{id:\"\"}],EntityTag:{id:\"minecraft:bat\",CustomNameVisible:0b,DeathTime:19s,DeathLootTable:\"item:egg/content/torch_zip\",NoAI:1b,Tags:[\"reward_egg\"],ActiveEffects:[{Id:7b,Amplifier:5b,Duration:100,ShowParticles:0b},{Id:14b,Amplifier:0b,Duration:100,ShowParticles:0b}]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

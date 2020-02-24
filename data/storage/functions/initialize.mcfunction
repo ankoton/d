@@ -1,0 +1,1 @@
+function storage:initialize/template/area_effect_cloud

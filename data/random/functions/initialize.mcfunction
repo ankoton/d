@@ -1,17 +1,24 @@
+# キャリー付き乗算乱数
+## lag-1 MWC
 
-# initialize
-scoreboard players set $rand_m const 31743
-scoreboard players set $rand_b const 65536
+## xₙ₊₁ = (mxₙ + cₙ) % b
+## cₙ₊₁ = (mxₙ + cₙ) / b
+## ※m,bは定数 m = 31743, b = 65536
 
-# mx + c = gametime
-# x = mx + c
-execute store result score $random global run time query gametime
+## initialize
+scoreboard objectives add random dummy
+scoreboard players set #m random 31743
+scoreboard players set #b random 65536
 
-# c = x (copy)
-scoreboard players operation $rand_c global = $random global
+## mx + c = gametime
+## x = mx + c
+execute store result score #x random run time query gametime
 
-# x %= b
-scoreboard players operation $random global %= $rand_b const
+## c = x (copy)
+scoreboard players operation #c random = #x random
 
-# c /= b
-scoreboard players operation $rand_c global /= $rand_b const
+## x %= b
+scoreboard players operation #x random %= #b random
+
+## c /= b
+scoreboard players operation #c random /= #b random

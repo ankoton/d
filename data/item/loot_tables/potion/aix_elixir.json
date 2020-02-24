@@ -1,0 +1,38 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:lingering_potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "エ", "color": "red", "italic": "false"},
+                                {"text": "ク", "color": "gold", "italic": "false"},
+                                {"text": "ス", "color": "yellow", "italic": "false"},
+                                {"text": "エ", "color": "green", "italic": "false"},
+                                {"text": "リ", "color": "blue", "italic": "false"},
+                                {"text": "ク", "color": "dark_blue", "italic": "false"},
+                                {"text": "サ", "color": "light_purple", "italic": "false"},
+                                {"text": "ー", "color": "dark_purple", "italic": "false"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:6b,Amplifier:10b,Duration:1}],CustomPotionColor:13631487}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "example": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:experience_bottle"
+                }
+            }
+        },
+        "example2": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:enchanted_golden_apple"
+                }
+            }
+        },
+        "example3": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:potion",
+                    "nbt": "{custom:1b}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["example", "example2", "example3"]
+    ],
+    "rewards": {
+        "function": "player:triggered/use"
+    }
+}

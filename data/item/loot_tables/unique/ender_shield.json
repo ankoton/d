@@ -1,0 +1,109 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:shield",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "エンダーマンの盾", "color": "dark_purple","italic": "false"}
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HideFlags:32,RepairCost:1000000000,Enchantments:[{id:\"minecraft:unbreaking\",lvl:2}],BlockEntityTag:{Base:10,Patterns:[{Color:2,Pattern:\"ss\"},{Color:15,Pattern:\"ms\"},{Color:15,Pattern:\"sc\"},{Color:15,Pattern:\"hhb\"},{Color:15,Pattern:\"ts\"}]}}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "generic.maxHealth",
+                                    "name": "generic.maxHealth",
+                                    "amount": 10,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "mainhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.movementSpeed",
+                                    "name": "generic.movementSpeed",
+                                    "amount": 3,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "mainhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.attackDamage",
+                                    "name": "generic.attackDamage",
+                                    "amount": 0.2,
+                                    "operation": "multiply_base",
+                                    "slot": [
+                                        "mainhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.knockbackResistance",
+                                    "name": "generic.knockbackResistance",
+                                    "amount": 0.2,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "mainhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.maxHealth",
+                                    "name": "generic.maxHealth",
+                                    "amount": 10,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "offhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.movementSpeed",
+                                    "name": "generic.movementSpeed",
+                                    "amount": 3,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "offhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.attackDamage",
+                                    "name": "generic.attackDamage",
+                                    "amount": 0.2,
+                                    "operation": "multiply_base",
+                                    "slot": [
+                                        "offhand"
+                                    ]
+                                },
+                                {
+                                    "attribute": "generic.knockbackResistance",
+                                    "name": "generic.knockbackResistance",
+                                    "amount": 0.2,
+                                    "operation": "addition",
+                                    "slot": [
+                                        "offhand"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

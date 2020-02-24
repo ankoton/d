@@ -1,0 +1,44 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "ロスト・オブ・デッド", "color": "gray", "italic": "false"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "強力な治癒力を求めたが故に開発された", "color": "dark_red", "italic": "false"}],
+                                [{"text": "ロスト・オブ・ライブズの効果は", "color": "dark_red", "italic": "false"}],
+                                [{"text": "アンデッドへの効果が薄かった。", "color": "dark_red", "italic": "false"}],
+                                [{"text": "そこで我々は「発酵したクモの目」を", "color": "dark_red", "italic": "false"}],
+                                [{"text": "配合することで効果を反転させた。", "color": "dark_red", "italic": "false"}],
+                                [{"text": "予想通り、アンデッドMOBに対して絶大な効果を", "color": "dark_red", "italic": "false"}],
+                                [{"text": "誇るようになったが、当然のように", "color": "dark_red", "italic": "false"}],
+                                [{"text": "アンデッドでないMOBへの効果は薄くなった。", "color": "dark_red", "italic": "false"}]
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:7b,Amplifier:29b,Duration:1}],CustomPotionColor:4393481}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

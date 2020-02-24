@@ -1,0 +1,38 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:lingering_potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "",
+                                {"text": "解毒薬", "color": "light_purple", "italic": "false"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [{"text": "毒を以て毒を制すというコンセプトで", "color": "dark_purple", "italic": "false"}],
+                                [{"text": "作られたポーション", "color": "dark_purple", "italic": "false"}]
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomPotionEffects:[{Id:1b,Amplifier:127b,Duration:0},{Id:2b,Amplifier:127b,Duration:0},{Id:3b,Amplifier:127b,Duration:0},{Id:4b,Amplifier:127b,Duration:0},{Id:5b,Amplifier:127b,Duration:0},{Id:8b,Amplifier:127b,Duration:0},{Id:9b,Amplifier:127b,Duration:0},{Id:10b,Amplifier:127b,Duration:0},{Id:11b,Amplifier:127b,Duration:0},{Id:12b,Amplifier:127b,Duration:0},{Id:13b,Amplifier:127b,Duration:0},{Id:14b,Amplifier:127b,Duration:0},{Id:15b,Amplifier:127b,Duration:0},{Id:16b,Amplifier:127b,Duration:0},{Id:17b,Amplifier:127b,Duration:0},{Id:18b,Amplifier:127b,Duration:0},{Id:19b,Amplifier:127b,Duration:0},{Id:20b,Amplifier:127b,Duration:0},{Id:21b,Amplifier:127b,Duration:0},{Id:22b,Amplifier:127b,Duration:0},{Id:23b,Amplifier:127b,Duration:0},{Id:24b,Amplifier:127b,Duration:0},{Id:25b,Amplifier:127b,Duration:0},{Id:26b,Amplifier:127b,Duration:0},{Id:27b,Amplifier:127b,Duration:0},{Id:28b,Amplifier:127b,Duration:0},{Id:29b,Amplifier:127b,Duration:0},{Id:30b,Amplifier:127b,Duration:0},{Id:31b,Amplifier:127b,Duration:0}],CustomPotionColor:5578058,HideFlags:32}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

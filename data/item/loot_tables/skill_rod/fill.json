@@ -1,0 +1,54 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text": "", "color": "aqua", "italic": "false"},
+                {"text": "フィール", "color": "aqua", "italic": "false"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {"text": "", "color": "blue", "italic": "false"},
+                  {"text": "【スキル】"},
+                  {"text": "フィール", "color": "aqua"}
+                ],
+                [
+                  {"text": "", "color": "blue", "italic": "false"},
+                  {"text": "を発動することができる魔法の杖。"}
+                ],
+                [
+                  ""
+                ],
+                [
+                  {"text": "", "color": "dark_purple", "italic": "false"},
+                  {"text": "使うと空中に"},
+                  {"text": "羊毛の足場", "color": "white"},
+                  {"text": "を設置する。"}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{skill_id:1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
